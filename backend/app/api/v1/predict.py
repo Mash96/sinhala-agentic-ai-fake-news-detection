@@ -29,7 +29,7 @@ class PredictRequest(BaseModel):
     top_k: int = 10
     llm_provider: str = "groq"  # 'groq' or 'openrouter'
     use_vector_db: bool = True  # Toggle for using Vector DB (Knowledge Base)
-    openrouter_api_key: Optional[str] = None  # Dynamic API Key from Frontend
+    openrouter_api_key: Optional[str] = process.env.OPENROUTER_API_KEY  # Dynamic API Key from Frontend
 
 
 class PredictResponse(BaseModel):

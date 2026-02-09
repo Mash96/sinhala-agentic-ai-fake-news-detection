@@ -12,6 +12,7 @@ const API_BASE = "http://localhost:8000";
 let statusDiv = null;
 
 // Settings Manager
+// instead of using the OpenRouter Key from front end use the backend Predict.py file
 const SettingsManager = {
     keys: {
         openrouter: 'sfd_openrouter_key'
